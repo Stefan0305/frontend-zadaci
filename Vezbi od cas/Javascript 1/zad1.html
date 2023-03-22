@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script>
+
+            /*
+            for (let index = 0; index <= 100; index++) {
+                if(index % 2 === 0 && index % 10 != 0){
+                    console.log(index);
+                }
+            }
+            */
+
+            function imeprezime(ime, prezime) {
+                return ime + " " + prezime[0] + ".";
+            }
+
+            function stepen(m, n){
+                return Math.pow(m, n);
+            }
+
+            function four_param(param1, param2, param3, param4) {
+                if (typeof param1 === "function" && typeof param2 === "number" && typeof param3 === "string" && typeof param4 === "boolean") {
+                    return "all good";
+                }
+                else {
+                    return "nevalidni argumenti";
+                }
+            }
+
+            function krug(r) {
+                console.log("Plostina na krug so radius " + r + " = " + 2 * r * Math.PI);
+                console.log("Perimetar na krug so radius " + r + " = " + Math.pow(r,2) * Math.PI);
+            }
+        </script>
+    </head>
+</html>

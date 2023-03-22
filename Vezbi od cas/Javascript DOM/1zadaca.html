@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #time {
+            width: 200px;
+            height: 200px;
+            margin: 400px auto;
+            font: 200 40px Helvetica;
+        }
+    </style>
+
+</head>
+
+<body id="body">
+    <div id="time">
+        
+    </div>
+
+    <script>
+        let gettime= function(){
+            const d= new Date();
+            let hours= d.getHours().toString().padStart(2,'0');
+            let minutes= d.getMinutes().toString().padStart(2,'0');
+            let seconds= d.getSeconds().toString().padStart(2,'0');
+            
+            let hashcode= "#" + hours + minutes + seconds;
+            let bodyEl= document.getElementById('body');
+            bodyEl.style.backgroundColor= hashcode;
+
+            let divEl= document.getElementById("time");
+            divEl.innerHTML= hashcode;
+            divEl.setAttribute("")
+        }
+
+        setInterval(gettime, 1000);
+    </script>
+</body>
+
+</html>

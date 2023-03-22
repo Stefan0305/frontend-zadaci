@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+<h1>WHAT DID DAVID BOWIE DO WHEN HE WAS YOUR AGE?</h1>
+<input type="text" name="age" id="age">
+<input type="button" name="search-btn" id="search-btn" value="GO" onclick="search()">
+
+<div id="container">
+
+</div>
+
+
+<script>
+    let events = [
+        {
+          age: 0,
+          text: "He was born David Robert Jones in Brixton on January 8, 1947. The same date Elvis Presley was born, who was 12 years older. Stephen Hawking and Shirley Bassey is also born this day.",
+        },
+        {
+          age: 1,
+          text: "He was a good looking baby.",
+          img: "http://supbowie.com/content/images/1948.jpg",
+        },
+        {
+          age: 2,
+          text: "He sang the ABC song perfectly.",
+        },
+        {
+          age: 3,
+          text: "He had a cameo appearance in a home video.",
+        },
+        {
+          age: 46,
+          text: 'He released the album "Black Tie White Noise" after spending time with his hard rock band "Tin Machine".',
+          video: "https://youtu.be/Rht01wob5B4",
+        },
+      ];
+
+      function search(){
+        let n= document.getElementById("age").value;
+        let container= document.getElementById("container");
+
+        let obj= events.find((key) => key.age=== parseInt(n));
+        
+        container.innerHTML= "";
+        container.innerHTML+= `<h3>${obj.text}</h3>`;
+
+        if(obj.img){
+            let img= document.createElement("img");
+            img.setAttribute("src", obj.img);
+            container.appendChild(img);
+        }
+
+        if(obj.video) {
+            
+        }
+      }
+</script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    
+    <div>
+        <label for="ime">Ime</label>
+        <input type="text" name="ime" id="ime">
+        <br>
+        <label for="prezime">Prezime</label>
+        <input type="text" name="prezime" id="prezime">
+        <br>
+        <label for="index">Index</label>
+        <input type="text" name="index" id="index">
+        <br>
+        <label for="predmet">Predmet</label>
+        <input type="predmet" name="predmet" id="predmet">
+        <br>
+        <label for="ocena">Ocena</label>
+        <select name="ocena" id="ocena">
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <br>
+        <input type="button" name="validiraj" id="validiraj" value="Validiraj" onclick="validate();">
+        <div id="validation-sign" style="height: 50px;"></div>
+        <input type="button" name="dodadi" id="dodadi" value="Dodadi" onclick="add_data()" disabled>
+    </div>
+
+    <br>
+
+    <div>
+        <table style="border: 0.5px solid black">
+            <thead>
+                <tr>
+                    <th>Ime</th>
+                    <th>Prezime</th>
+                    <th>Index</th>
+                    <th>Predmet</th>
+                    <th>Ocena</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="tabela-script.js"></script>
+</body>

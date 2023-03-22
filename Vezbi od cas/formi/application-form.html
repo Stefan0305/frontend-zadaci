@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Application form</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        
+        <h1>Application form</h1>
+        
+        <form action="">
+            <label>Ime i prezime</label>
+            <input type="text" name="ime-prezime" id="ime-prezime" required>
+           
+            <br><br>
+
+            <label for="">Mesto na ziveenje</label>
+            <input type="text" name="grad" id="grad" required>
+
+            <br><br>
+
+            <label for="">Data na ragjanje</label>
+            <input type="date" name="data-ragjanje" id="data-ragjanje" required>
+
+            <br><br>
+
+            <label for="">Telefon</label>
+            <input type="tel" name="tel-broj" id="tel-broj">
+
+            <br><br>
+
+            <label for="">Email</label>
+            <input type="email" name="email" id="email" required>
+
+            <br><br>
+
+            <label for="">Najvisoko zavrseno obrazovanie</label>
+            <select name="zavrseno-obrazovanie" id="">
+                <option value="osnovno">Osnovno</option>
+                <option value="sredno">Sredno</option>
+                <option value="visoko">Visoko</option>
+            </select>
+
+            <br><br>
+
+            <label for="">Rabotna pozicija za koja aplicirate</label><br>
+            <input type="checkbox" name="rabotna-pozicija" id="">Junior Front-end dev<br>
+            <input type="checkbox" name="rabotna-pozicija" id="">Junior Back-end dev<br>
+            <input type="checkbox" name="rabotna-pozicija" id="">Senior Back-end dev<br>
+            <input type="checkbox" name="rabotna-pozicija" id="">Senior Full-stack dev
+
+            <br><br>
+
+            <label for="">Prethodno iskustvo vo godini</label>
+            <input type="number" name="iskustvo" id="iskustvo">
+
+            <br><br>
+
+            <label for="">Posakuvana plata</label>
+            <input type="number" name="plata" id="plata">
+
+            <br><br>
+
+            <label for="">Zosto sakate da se vrabotite vo nasata kompanija?</label>
+            <br>
+            <textarea name="prasanje" id="prasanje" cols="30" rows="10" maxlength="150" placeholder="max 150 chars..." required></textarea>
+
+            <br><br>
+
+            <input type="submit" name="submit" id="submit">
+            <input type="reset" name="reset" id="reset">
+        </form>
+    </body>
+</html>

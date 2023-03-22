@@ -1,0 +1,12 @@
+#layout {
+    display: grid;
+    grid-template: repeat(3, 200px) / repeat(4, 200px);
+}
+
+.red-cells {
+    background-color: lightcoral;
+}
+
+.blue-cells {
+    background-color: lightblue;
+}

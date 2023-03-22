@@ -1,0 +1,5 @@
+#memory-game {
+    display: grid;
+    grid-template: repeat(4, 50px), repeat(5, 50px);
+    
+}

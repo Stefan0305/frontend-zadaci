@@ -1,0 +1,75 @@
+#menu-layout {
+    display: grid;
+    grid-template: 20px / repeat(5, auto);
+}
+
+#menu-layout div {
+    text-align: center;
+}
+
+#layout1 {
+    display: grid;
+    grid-template: 400px / 400px 400px;
+}
+
+#layout1 div {
+    border: 1px solid black;
+}
+
+.left-column {
+    text-align: center;
+    padding-top: 150px;
+}
+
+#img-holder {
+    background-image: url(0x0.jpg);
+    height: cover;
+}
+
+#learnmore-btn {
+    display: block;
+    margin: 300px auto 0 auto;
+    border: none;
+    background-color: darkgoldenrod;
+    font-size: 15px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#learnmore-btn:hover {
+    background-color: blue;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-top: 290px;
+}
+
+#layout2 {
+    display: grid;
+    grid-template: 400px / 400px 400px;
+    grid-column-gap: 30px;
+}
+
+#layout2 div {
+    border: 1px solid black;
+}
+
+#kolona-levo {
+    text-align: center;
+}
+
+#kolona-desno {
+    text-align: justify;
+    background-color: darkkhaki;
+}
+
+#kontakt-btn {
+    position: relative;
+    top: 50px;
+    right: 60px;
+    width: 100px;
+    height: 30px;
+}
